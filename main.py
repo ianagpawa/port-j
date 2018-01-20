@@ -17,4 +17,6 @@ APP_SECRET = json.loads(open('secrets.json', 'r').read())['app-secret-key']
 app = Flask(__name__)
 app.secret_key = APP_SECRET
 
-print APP_SECRET
+@app.route('/', methods=['GET'])
+def main():
+    return render_template('main.html')

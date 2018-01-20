@@ -1,1 +1,4 @@
 secrets.json
+lib
+*.pyc
+env
