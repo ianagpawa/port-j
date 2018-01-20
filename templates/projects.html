@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class='row col-md-12'>
+    {% for project in projects %}
+    <div class='col-md-4'>
+        <h2>{{project.title}}</h2>
+        <img src="http://via.placeholder.com/350x150">
+        <p>{{project.description}}</p>
+    </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}
